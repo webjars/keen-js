@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>keen-js</artifactId>
-    <version>3.2.1</version>
+    <version>3.2.2-SNAPSHOT</version>
     <name>WEBJAR_NAME</name>
     <description>WebJar for WEBJAR_NAME</description>
     <url>http://webjars.org</url>
@@ -51,7 +51,7 @@
         <url>http://github.com/webjars/keen-js</url>
         <connection>scm:git:https://github.com/webjars/keen-js.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/keen-js.git</developerConnection>
-        <tag>keen-js-3.2.1</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <build>
