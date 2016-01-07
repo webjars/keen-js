@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>keen-js</artifactId>
-    <version>3.2.2-SNAPSHOT</version>
-    <name>WEBJAR_NAME</name>
-    <description>WebJar for WEBJAR_NAME</description>
+    <version>3.3.0-SNAPSHOT</version>
+    <name>Keen</name>
+    <description>WebJar for Keen</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>3.2.1</upstream.version>
+        <upstream.version>3.3.0</upstream.version>
         <upstream.url>https://raw.githubusercontent.com/keen/keen-js/v${upstream.version}/dist</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
@@ -66,11 +66,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}" />
-                                <get src="${upstream.url}/keen-tracker.js" dest="${destDir}" />
-                                <get src="${upstream.url}/keen-tracker.min.js" dest="${destDir}" />
-                                <get src="${upstream.url}/keen.js" dest="${destDir}" />
-                                <get src="${upstream.url}/keen.min.js" dest="${destDir}" />
+                                <mkdir dir="${destDir}"/>
+                                <get src="${upstream.url}/keen-tracker.js" dest="${destDir}"/>
+                                <get src="${upstream.url}/keen-tracker.min.js" dest="${destDir}"/>
+                                <get src="${upstream.url}/keen.js" dest="${destDir}"/>
+                                <get src="${upstream.url}/keen.min.js" dest="${destDir}"/>
                             </target>
                         </configuration>
                     </execution>
@@ -80,13 +80,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.3</version>
             </plugin>
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.2</version>
+                <version>1.6.6</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
